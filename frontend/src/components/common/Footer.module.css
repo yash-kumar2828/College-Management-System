@@ -1,0 +1,117 @@
+.footersContent{
+    background: linear-gradient(135deg, #1b262c, #0f3057);
+
+}
+.footerContainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 0;
+}
+.importantLinks{
+    width: 40%;
+}
+.importantLinks h3{
+    color: #e91e63;
+    font-family: 'Poppins', sans-serif;
+}
+.allLinks{
+    margin-top: 1.5rem;
+}
+.links{
+    margin-top: 0.3rem;
+}
+.contactLinks{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.icons{
+    margin-top: -0.2rem;
+    width: 2rem;
+}
+
+.arrow{
+    margin-top: -0.2rem;
+    font-size: 1.2rem;
+}
+.links:hover.links .contactLinks{
+    letter-spacing: 1px;
+    color: #e91e63;
+    transition: 0.5s;
+}
+.links:not(:hover).links .contactLinks{
+    transition: 0.5s;
+}
+.socialMedia{
+    display: flex;
+    
+}
+.share{
+    margin-top: 1rem;
+    color: gray;
+    font-size: 2.5rem;
+    margin-left: 0.5rem;
+}
+.social{
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+}
+.socialLinks{
+    color: white;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
+.social .socialLinks:hover{
+    color: #e91e63;
+    transition: 0.5s;
+}
+.developerInfo{
+    background: linear-gradient(135deg, #232526, #414345);
+    padding: 2rem
+}
+.developer{
+    display: flex;
+    justify-content: space-between;
+}
+.developerDetail span{
+    font-size: 1.1rem;
+    color: #fff;
+}
+.developerDetail a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+@media(max-width:1060px){
+    .footerContainer{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 5rem;
+    }
+    .importantLinks{
+        width: 100%;
+        margin-top: 3rem;
+    }
+}
+
+
+@media(max-width:750px){
+    .footerContainer{
+        display: inline-block;
+    }
+    .importantLinks{
+        width: 80%;
+        margin-left: 20%;
+    }
+    .developer{
+        display: inline-block;
+        text-align: center;
+    }
+    .developerDetail{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
