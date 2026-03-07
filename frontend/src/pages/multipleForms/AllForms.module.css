@@ -1,0 +1,69 @@
+.admissionForm{
+    padding: 4rem 0;
+    margin-left: 5%;
+}
+.admissionForm h4{
+    color:  #003a66 !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.formsData{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.formsValue input{
+    width: 90%;
+}
+
+.formsValue select{
+    width: 90%;
+}
+
+.addressTextarea{
+    width: 90%;
+}
+.courseValue{
+    width: 45%;
+}
+
+.checkboxContainer{
+    width: 90%;
+}
+.submitButton{
+    width: 95%;
+}
+
+.submitButton button{
+    background: linear-gradient(135deg, #0f766e, #0d9488);;
+    border: none;
+}
+
+.submitButton button:hover{
+    background: linear-gradient(135deg, #0d9488, #22c55e);
+  transform: translateY(-2px);
+  transition: 0.3s ease;
+}
+
+
+@media(max-width:1060px){
+    .admissionForm{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .formsData{
+        display: inline-block;
+        width: 100%;
+    }
+    .formsValue input{
+        width: 95%;
+    }
+    .formsValue select{
+        width: 95%;
+    }
+    .addressTextarea{
+        width: 95%;
+    }
+    .courseValue{
+        width: 95%;
+    }
+}
