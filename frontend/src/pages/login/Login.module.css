@@ -1,0 +1,63 @@
+.loginSection {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 8rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+}
+
+.loginForm{
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    width: 40%;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+
+}
+
+.heading h3{
+    font-family: 'Poppins', sans-serif;
+    color: #0f172a;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.formsValue{
+    width: 30vmax;
+}
+
+.buttons{
+    width: 30vmax;
+}
+
+@media(max-width:1100px){
+    .loginForm{
+        width: 50%;
+    }
+}
+
+@media(max-width:735px){
+    .loginForm{
+        width: 60%;
+    }
+    .formsValue{
+        width: 32vmin;
+    }
+    .buttons{
+        width: 32vmin;
+    }
+}
+@media(max-width:530px){
+    .loginForm{
+        padding: 5rem 1rem;
+    }
+    .loginForm{
+        width: 70%;
+    }
+    .formsValue{
+        width: 50vmin;
+    }
+    .buttons{
+        width: 50vmin;
+    }
+}
