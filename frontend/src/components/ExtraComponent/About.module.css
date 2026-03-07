@@ -1,0 +1,77 @@
+.CollegeAbout{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem;
+    
+
+}
+.studentImage{
+    width:40vmax;
+    height: 40vmax;
+    margin-top: 4%;
+}
+.studentImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.aboutCollege{
+    margin-top: 4%;
+    margin-left: 4%;
+}
+
+.studentImage,
+.aboutCollege {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.from-left {
+  transform: translateX(-150px);
+}
+
+.from-right {
+  transform: translateX(150px);
+}
+
+.visible.from-left,
+.visible.from-right {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.aboutCollege h3{
+    color:  #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.aboutCollege p{
+    color: #a5f3fc;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.aboutCollege h5{
+    color:  #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+@media(max-width:1060px){
+    .CollegeAbout{
+    display: inline;
+    }
+    .studentImage{
+    width:80%;
+    height: 100vmin;
+    margin-left: 10%;
+    border-radius: 10px;
+    }
+    .aboutCollege{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+}

@@ -1,0 +1,50 @@
+.collegeImage{
+    position: relative;
+}
+.collegeImage::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #1c4463;
+  mix-blend-mode: multiply;
+}
+
+.collegeImage img{
+    width: 100%;
+    height: 50vh;
+    display: block;
+}
+
+.headerPage{
+    position: absolute;
+    top: 12rem;
+    width: 100%;
+    text-align: center;
+}
+.headingContent h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 4vmax;
+    font-family: 'Poppins', sans-serif;
+}
+.pageLinks{
+    margin-top: 1.3rem;
+}
+.pageLinks a{
+    padding: 0.6rem;
+    text-decoration: none;
+    color: white;
+    margin-left: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-top: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+}
+
+.pageLinks a:hover{
+    color: #e91e63;
+    transition: 1s;
+}
+
+ 

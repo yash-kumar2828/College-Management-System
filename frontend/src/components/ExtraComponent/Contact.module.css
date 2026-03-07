@@ -1,0 +1,44 @@
+.contactContainer{
+    padding: 5rem 0;
+
+}
+.contactForm{
+    margin-top: 4%;
+    margin-left: 10%;
+}
+.formsData{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.formsValue input{
+    width: 90%;
+}
+.contactForm h5{
+    color:  #003a66 !important;
+    font-family: 'Poppins', sans-serif;
+}
+.contactForm h1{
+    color:  #003a66 !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.submitButton{
+    width: 95%;
+}
+
+
+
+@media(max-width:1060px){
+    .contactForm{
+        width: 80%;
+        margin-top: 4rem;
+        margin-left: 10%;
+    }
+    .formsData{
+        display: inline-block;
+        width: 100%;
+    }
+    .formsValue input{
+        width: 95%;
+    }
+}
