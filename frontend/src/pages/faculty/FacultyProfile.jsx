@@ -13,7 +13,7 @@ const FacultyProfile = () => {
   useEffect(() => {
     const getProfile = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/faculty/dashboard", {
+        const res = await axios.get("https://college-management-system-cpo2.onrender.com/faculty/dashboard", {
           withCredentials: true,
         });
         console.log("API Response:", res.data); 
