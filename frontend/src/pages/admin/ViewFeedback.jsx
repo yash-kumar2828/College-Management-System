@@ -8,7 +8,7 @@ const ViewFeedback = () => {
     useEffect(()=>{
         const getFeedback=async()=>{
             try {
-                const res=await axios.get("http://localhost:3000/student/getFeedback");
+                const res=await axios.get("https://college-management-system-cpo2.onrender.com/student/getFeedback");
                 console.log(res.data);
                 setFeedback(res.data);
             } catch (error) {
