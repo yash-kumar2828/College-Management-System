@@ -12,7 +12,7 @@ const ManageCourses = () => {
   useEffect(()=>{
     const getCourse=async()=>{
       try {
-        const res=await axios.get("http://localhost:3000/admin/");
+        const res=await axios.get("https://college-management-system-cpo2.onrender.com/admin/");
         setCourses(res.data);
       } catch (error) {
         console.log(error);
@@ -23,7 +23,7 @@ const ManageCourses = () => {
 
   const handleDelete=async(id)=>{
     try {
-      await axios.delete(`http://localhost:3000/admin/${id}`);
+      await axios.delete(`https://college-management-system-cpo2.onrender.com/${id}`);
       toast.success("Course deleted");
     } catch (error) {
       console.log(error);
