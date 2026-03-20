@@ -9,7 +9,7 @@ const ManageResult = () => {
   useEffect(() => {
     const getResult = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/course/allResult", {
+        const res = await axios.get("https://college-management-system-cpo2.onrender.com/course/allResult", {
           withCredentials: true,
         });
         setResults(res.data);
