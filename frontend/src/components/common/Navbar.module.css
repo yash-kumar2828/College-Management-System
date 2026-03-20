@@ -7,22 +7,13 @@
   z-index: 1000;
 }
 .navbarContent{
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+      background: linear-gradient(to right, #ff7e5f, #feb47b, #ff7e5f);
 }
-
-
 .logo img{
     width: 17vmax;
     height: 4vmax;
     margin-left: 1rem;
 }
-
-
-.navbarCollapse {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-}
-
-
 .navLink {
     color: #ffffff !important;
     font-family: 'Poppins', sans-serif;
@@ -60,7 +51,6 @@
 }
 
 .navLink:hover {
-  /* color: #ffd6ff !important; */
   transition: 0.5s;
 }
 
@@ -81,8 +71,8 @@
     .navLink {
     margin-left: 1rem;
     }
-
     .navbarCollapse {
+    background: linear-gradient(to right, #ff7e5f, #feb47b, #ff7e5f);
     position: absolute;
     top: 100%;
     left: 0;
