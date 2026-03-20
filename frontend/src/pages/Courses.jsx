@@ -15,7 +15,7 @@ const Courses = () => {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/admin/");
+        const response = await axios.get("https://college-management-system-cpo2.onrender.com/admin/");
         setCourses(response.data);
       } catch (error) {
         console.error("Error fetching courses:", error);
