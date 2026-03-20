@@ -14,7 +14,7 @@ const CourseSyllabus = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const courseRes = await axios.get(`http://localhost:3000/admin/${courseId}`);
+        const courseRes = await axios.get(`https://college-management-system-cpo2.onrender.com/admin/${courseId}`);
         setCourse(courseRes.data);
 
         const syllabusRes = await axios.get(`http://localhost:3000/syllabus/${courseId}`);
