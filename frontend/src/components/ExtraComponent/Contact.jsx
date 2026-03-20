@@ -13,7 +13,7 @@ const Contact=()=>{
 
    const onSubmit = async(data) => {
     try {
-        const res=await axios.post("http://localhost:3000/student/addContact",data);
+        const res=await axios.post("https://college-management-system-cpo2.onrender.com/student/addContact",data);
         console.log(data);
         toast.success("Message Send Successfully!");
         reset();
