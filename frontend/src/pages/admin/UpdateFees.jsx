@@ -16,7 +16,7 @@ const UpdateFees = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:3000/admin/fees",
+      const res = await axios.post("https://college-management-system-cpo2.onrender.com/admin/fees",
         { rollNumber, status},
         { withCredentials: true }
       );
