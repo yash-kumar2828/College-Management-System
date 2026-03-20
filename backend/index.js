@@ -19,7 +19,7 @@ import feedbackRoute from './route/feedback.route.js';
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: "http://localhost:5173", 
+  origin: "https://college-management-system-frontend-me9s.onrender.com/", 
   credentials: true
 }));
 app.use(cookieParser());
