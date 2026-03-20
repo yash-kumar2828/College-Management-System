@@ -15,7 +15,7 @@ const UploadSyllabus = () => {
 
   useEffect(() => {
     const fetchCourses = async () => {
-      const res = await axios.get("http://localhost:3000/admin");
+      const res = await axios.get("https://college-management-system-cpo2.onrender.com/admin");
       setCourses(res.data);
     };
     fetchCourses();
@@ -28,7 +28,7 @@ const UploadSyllabus = () => {
     }
 
     try {
-      const res = await axios.post(`http://localhost:3000/syllabus/addSemester/${courseId}`,
+      const res = await axios.post(`https://college-management-system-cpo2.onrender.com/syllabus/addSemester/${courseId}`,
         {
           semesterNumber: Number(semesterNumber),
           subjects: [
