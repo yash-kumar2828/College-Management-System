@@ -27,7 +27,7 @@ const FacultyUploadResult = () => {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/admin");
+        const res = await axios.get("https://college-management-system-cpo2.onrender.com/admin");
         setCourses(res.data);
       } catch (err) { console.error(err); }
     };
