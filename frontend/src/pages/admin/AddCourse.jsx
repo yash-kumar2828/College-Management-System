@@ -24,7 +24,7 @@ const AddCourse = () => {
         type:data.type
     }
     try {
-        const res=await axios.post("http://localhost:3000/admin/create",courseInfo);
+        const res=await axios.post("https://college-management-system-cpo2.onrender.com",courseInfo);
         console.log(res.data);
         toast.success("Courses added successfully!");
         reset();
