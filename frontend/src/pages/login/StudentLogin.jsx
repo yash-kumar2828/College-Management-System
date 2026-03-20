@@ -19,7 +19,7 @@ const StudentLogin = () => {
     };
     try {
       const res = await axios.post(
-        "http://localhost:3000/student/login",
+        "https://college-management-system-cpo2.onrender.com/student/login",
         studentInfo,
         {
           withCredentials: true,
