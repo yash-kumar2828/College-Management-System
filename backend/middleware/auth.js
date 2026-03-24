@@ -2,13 +2,15 @@ import jwt from "jsonwebtoken";
 
 export const authStudent = (req, res, next) => {
   try {
-    const token = req.cookies.token;
+    const token = req.cookies.token;   
+    
+    console.log("Cookies:", req.cookies);
 
     if (!token) {
       return res.status(401).json({ message: "No token provided" });
     }
 
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const decoded = jwt.verify(token, "yashSecretKey");
 
     req.studentId = decoded.id;
 
@@ -18,15 +20,20 @@ export const authStudent = (req, res, next) => {
   }
 };
 
+
+
+
 export const authFaculty = (req, res, next) => {
   try {
-    const token = req.cookies.token;
+    const token = req.cookies.token;   
+    
+    console.log("Cookies:", req.cookies);
 
     if (!token) {
       return res.status(401).json({ message: "No token provided" });
     }
 
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const decoded = jwt.verify(token, "yashSecretKey");
 
     req.facultyId = decoded.id;
 

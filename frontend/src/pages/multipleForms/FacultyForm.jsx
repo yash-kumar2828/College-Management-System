@@ -21,7 +21,7 @@ const FacultyForm=()=>{
     
        const onSubmit = async(data) => {
         try {
-            const res=await axios.post("https://college-management-system-cpo2.onrender.com/faculty/register",data)
+            const res=await axios.post("http://localhost:3000/faculty/register",data)
             console.log(res.data);
             navigate("/login/facultyData",{
             state:{

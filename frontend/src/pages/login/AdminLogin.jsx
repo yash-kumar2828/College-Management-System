@@ -19,7 +19,7 @@ const AdminLogin = () => {
         password:data.password
     }
     try {
-        const res=await axios.post("https://college-management-system-cpo2.onrender.com/admin/login",adminInfo);
+        const res=await axios.post("http://localhost:3000/admin/login",adminInfo);
         console.log(res.data);
         if(res.data){
             toast.success("Login Successfully!");

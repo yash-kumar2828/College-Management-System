@@ -8,7 +8,7 @@ const ManageStudents = () => {
     useEffect(()=>{
         const getStudent=async()=>{
             try {
-                const res=await axios.get("https://college-management-system-cpo2.onrender.com/student/",{
+                const res=await axios.get("http://localhost:3000/student/",{
                     withCredentials:true,
                 });
                 console.log(res.data);

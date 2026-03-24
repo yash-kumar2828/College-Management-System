@@ -17,7 +17,7 @@ const StudentDashboard = () => {
     const getDashboard = async () => {
       try {
         const res = await axios.get(
-          "https://college-management-system-cpo2.onrender.com/student/dashboard",
+          "http://localhost:3000/student/dashboard",
           {
             withCredentials: true,
           },

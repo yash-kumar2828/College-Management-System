@@ -26,7 +26,7 @@ const About=()=>{
     return(
         <>
             <section id="about" style={{background: 'linear-gradient(135deg, #1e3c72, #2a5298)'}}>
-                <div className={`container-lg ${styles.CollegeAbout}`}>
+               <div className={`container-lg ${styles.CollegeAbout}`}>
 
 
                     <div ref={(el) => (refs.current[0] = el)} className={`${styles.studentImage} ${styles["from-left"]}`}>

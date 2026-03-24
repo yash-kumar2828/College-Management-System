@@ -23,9 +23,7 @@ const Navbar=()=> {
 
   return (
     <>
-      <nav
-        className={`navbar navbar-expand-lg bg-body-tertiary sticky-top ${styles.navbarContent}`}
-      >
+      <nav className={`navbar navbar-expand-lg sticky-top ${styles.navbarContent}`}>
         <div className="container-fluid">
           <div className={styles.logo}>
             <img src={logo} alt="" />

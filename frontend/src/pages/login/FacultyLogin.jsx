@@ -15,7 +15,7 @@ const FacultyLogin = () => {
   const onSubmit = async (data) => {
     try {
       const res = await axios.post(
-        "https://college-management-system-cpo2.onrender.com/faculty/login",
+        "http://localhost:3000/faculty/login",
         data,
         {
           withCredentials: true,

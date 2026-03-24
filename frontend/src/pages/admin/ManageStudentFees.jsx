@@ -10,7 +10,7 @@ const ManageStudentFees = () => {
     const fetchStudents = async () => {
       try {
         const res = await axios.get(
-          "https://college-management-system-cpo2.onrender.com/student/fees",
+          "http://localhost:3000/student/fees",
           { withCredentials: true },
         );
         setStudents(res.data);

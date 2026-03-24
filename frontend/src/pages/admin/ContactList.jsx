@@ -8,7 +8,7 @@ const ContactList = () => {
     useEffect(()=>{
         const getStudent=async()=>{
             try {
-                const res=await axios.get("https://college-management-system-cpo2.onrender.com/student/allContact",{
+                const res=await axios.get("http://localhost:3000/student/allContact",{
                     withCredentials:true,
                 });
                 console.log(res.data);

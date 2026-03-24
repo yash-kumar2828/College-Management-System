@@ -9,7 +9,7 @@ const StudentNotice = () => {
   useEffect(() => {
     const fetchNotice=async()=>{
       try {
-        const res=await axios.get("https://college-management-system-cpo2.onrender.com/notice/latest");
+        const res=await axios.get("http://localhost:3000/notice/latest");
         setNotices(res.data.data);
       } catch (error) {
         console.error("Error fetching courses:", error);

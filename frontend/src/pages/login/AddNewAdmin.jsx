@@ -21,7 +21,7 @@ const AddNewAdmin = () => {
         password:data.password
     }
     try {
-        const res=await axios.post("https://college-management-system-cpo2.onrender.com/admin/addAdmin",adminInfo);
+        const res=await axios.post("http://localhost:3000/admin/addAdmin",adminInfo);
         console.log(res.data);
         if(res.data){
             toast.success("Add Admin Successfully!");

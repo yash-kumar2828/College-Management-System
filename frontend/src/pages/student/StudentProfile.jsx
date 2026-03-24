@@ -15,7 +15,7 @@ const StudentProfile = () => {
   useEffect(() => {
     const getDashboard = async () => {
       try {
-        const res = await axios.get("https://college-management-system-cpo2.onrender.com/student/dashboard", {
+        const res = await axios.get("http://localhost:3000/student/dashboard", {
           withCredentials: true,
         });
         console.log("API Response:", res.data); 

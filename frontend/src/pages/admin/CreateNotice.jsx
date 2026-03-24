@@ -16,7 +16,7 @@ const CreateNotice = () => {
   const onSubmit = async(data) => {
 
     try {
-        const res=await axios.post("https://college-management-system-cpo2.onrender.com/notice/create",data);
+        const res=await axios.post("http://localhost:3000/notice/create",data);
         console.log(res.data);
         if(res.data){
             toast.success("Notice Create Successfully!");

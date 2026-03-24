@@ -16,7 +16,7 @@ const StudentResult = () => {
     const fetchResults = async () => {
       try {
         const resultRes = await axios.get(
-          "https://college-management-system-cpo2.onrender.com/course/studentResult", 
+          "http://localhost:3000/course/studentResult", 
           { withCredentials: true },
         );
 
